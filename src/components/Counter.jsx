@@ -4,7 +4,22 @@ function Counter() {
   const [counter, setCounter] = useState(5);
   const [timerStarted, setTimerStarted] = useState(false);
   const [heading, setHeading] = useState('Time Remaining');
-  const [buttonContent, setButtonContent] = useState('Start Timer');
+  const [buttonContent, setButtonContent] = useState('Start');
+
+  console.log(counter);
+
+  function handleButton() {
+    if (buttonContent === 'Start') {
+      setTimerStarted(true);
+      setButtonContent('Stop');
+    } else if (buttonContent === 'Stop') {
+      setTimerStarted(false);
+      setButtonContent('Reset');
+    } else {
+      setCounter(5);
+      setButtonContent('Start');
+    }
+  }
 
   useEffect(() => {
     timerStarted &&
@@ -16,7 +31,7 @@ function Counter() {
     <div>
       <div>{heading}</div>
       <div>{counter}</div>
-      <button onClick={setTimerStarted}>{buttonContent}</button>
+      <button onClick={handleButton}>{buttonContent}</button>
     </div>
   );
 }
