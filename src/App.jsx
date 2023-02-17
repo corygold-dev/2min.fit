@@ -5,13 +5,16 @@ import exercises from "./exercises";
 
 function App() {
   const [exerciseNum, setExerciseNum] = useState(1);
+  const [timerStarted, setTimerStarted] = useState(false);
+
   return (
     <div>
       <ExerciseDisplay
+        timerStarted={timerStarted}
         exerciseNum={exerciseNum}
         setExerciseNum={setExerciseNum}
       />
-      <Counter exerciseNum={exerciseNum} setExerciseNum={setExerciseNum} />
+      <Counter exerciseNum={exerciseNum} setExerciseNum={setExerciseNum} timerStarted={timerStarted} setTimerStarted={setTimerStarted} />
     </div>
   );
 }
