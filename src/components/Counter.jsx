@@ -19,7 +19,7 @@ function Counter({ setExerciseNum, exerciseNum }) {
       }
       case "Reset": {
         setTimerStarted(false);
-        setCounter(30);
+        exerciseNum === 3 ? setCounter(60) : setCounter(30);
         setButtonContent("Start");
         break;
       }
@@ -29,15 +29,21 @@ function Counter({ setExerciseNum, exerciseNum }) {
   }
 
   useEffect(() => {
+    function handleCount() {
+      if (!timerStarted && buttonContent !== "Reset") {
+        exerciseNum === 3 ? setCounter(60) : setCounter(30);
+      }
+    }
     function handleButtonContent() {
       if (counter < 1) {
         setTimerStarted(false);
         setButtonContent("Start");
-        setCounter(30);
         setExerciseNum(exerciseNum + 1);
+        exerciseNum === 3 ? setCounter(60) : setCounter(30);
       }
     }
     handleButtonContent();
+    handleCount();
     timerStarted &&
       counter > 0 &&
       setTimeout(() => setCounter(counter - 1), 1000);
