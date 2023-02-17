@@ -18,7 +18,9 @@ export const ExerciseDisplay = ({
 
   return (
     <>
-      <h1>{exerciseBlock[exerciseNum]}</h1>
+      <a href={exerciseBlock[exerciseNum]["link"]} target="_blank" rel="noreferrer">
+        {exerciseBlock[exerciseNum]["exerciseName"]}
+      </a>
       {timerStarted ? null : (
         <div id="next-prev-buttons">
           {exerciseNum < 3 ? (

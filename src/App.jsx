@@ -14,7 +14,12 @@ function App() {
         exerciseNum={exerciseNum}
         setExerciseNum={setExerciseNum}
       />
-      <Counter exerciseNum={exerciseNum} setExerciseNum={setExerciseNum} timerStarted={timerStarted} setTimerStarted={setTimerStarted} />
+      <Counter
+        exerciseNum={exerciseNum}
+        setExerciseNum={setExerciseNum}
+        timerStarted={timerStarted}
+        setTimerStarted={setTimerStarted}
+      />
     </div>
   );
 }
