@@ -1,28 +1,28 @@
 const exercises = {
   1: {
-    upper: "push-up",
-    lower: "air squat",
-    stretch: "right shoulder stretch",
+    1: "push-up",
+    2: "air squat",
+    3: "right shoulder stretch",
   },
   2: {
-    upper: "pull-up",
-    lower: "glute bridge",
-    stretch: "squat prying",
+    1: "pull-up",
+    2: "glute bridge",
+    3: "squat prying",
   },
   3: {
-    upper: "chair dip",
-    lower: "lunge",
-    stretch: "sitting V stretch",
+    1: "chair dip",
+    2: "lunge",
+    3: "sitting V stretch",
   },
   4: {
-    upper: "row",
-    lower: "good morning",
-    stretch: "lying pigeon",
+    1: "row",
+    2: "good morning",
+    3: "lying pigeon",
   },
   5: {
-    upper: "8 count pushup",
-    lower: "8 count pushup",
-    strech: "hip flexor",
+    1: "8 count pushup",
+    2: "test lower body",
+    3: "hip flexor",
   },
 };
 
