@@ -1,6 +1,12 @@
 import { useEffect, useState } from "react";
+import ding from "../assets/ding.mp3";
 
-function Counter({ setExerciseNum, exerciseNum, timerStarted, setTimerStarted }) {
+function Counter({
+  setExerciseNum,
+  exerciseNum,
+  timerStarted,
+  setTimerStarted,
+}) {
   const [counter, setCounter] = useState(30);
   const [buttonContent, setButtonContent] = useState("Start");
 
@@ -35,6 +41,7 @@ function Counter({ setExerciseNum, exerciseNum, timerStarted, setTimerStarted })
     }
     function handleButtonContent() {
       if (counter < 1) {
+        new Audio(ding).play();
         setTimerStarted(false);
         setButtonContent("Start");
         setExerciseNum(exerciseNum + 1);
@@ -46,7 +53,7 @@ function Counter({ setExerciseNum, exerciseNum, timerStarted, setTimerStarted })
     timerStarted &&
       counter > 0 &&
       setTimeout(() => setCounter(counter - 1), 1000);
-  }, [counter, timerStarted, setExerciseNum, exerciseNum, buttonContent]);
+  }, [counter, timerStarted, setTimerStarted, setExerciseNum, exerciseNum, buttonContent]);
 
   return (
     <div>

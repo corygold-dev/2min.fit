@@ -38,9 +38,18 @@ const exercises = {
     3: { exerciseName: "Lying Pigeon", link: "link" },
   },
   5: {
-    1: { exerciseName: "Hand Stand", link: "link" },
-    2: { exerciseName: "L Sit", link: "link" },
-    3: { exerciseName: "Hip Flexor Stretch", link: "link" },
+    1: {
+      exerciseName: "Hand Stand Progression",
+      link: "https://www.youtube.com/watch?v=ctunmnwbbSI&ab_channel=Calisthenicmovement",
+    },
+    2: {
+      exerciseName: "Leg Raises",
+      link: "https://www.youtube.com/watch?v=yOPg7xKiE3g&ab_channel=PrecisionNutrition",
+    },
+    3: {
+      exerciseName: "Hip Flexor Stretch",
+      link: "https://www.youtube.com/watch?v=7bRaX6M2nr8&ab_channel=AskDoctorJo",
+    },
   },
 };
 export default exercises;
