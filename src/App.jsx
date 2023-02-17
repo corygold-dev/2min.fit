@@ -11,7 +11,7 @@ function App() {
         exerciseNum={exerciseNum}
         setExerciseNum={setExerciseNum}
       />
-      <Counter />
+      <Counter exerciseNum={exerciseNum} setExerciseNum={setExerciseNum} />
     </div>
   );
 }

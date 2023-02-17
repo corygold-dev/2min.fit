@@ -14,7 +14,7 @@ export const ExerciseDisplay = ({ exerciseNum, setExerciseNum }) => {
 
   return (
     <>
-      <div>The current exercise is {exerciseBlock[exerciseNum]}</div>
+      <h1>{exerciseBlock[exerciseNum]}</h1>
       {exerciseNum < 3 ? (
         <button onClick={handleNextExercise}>Next Exercise</button>
       ) : null}

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function Counter() {
+function Counter({ setExerciseNum, exerciseNum }) {
   const [counter, setCounter] = useState(30);
   const [timerStarted, setTimerStarted] = useState(false);
   const [buttonContent, setButtonContent] = useState("Start");
@@ -30,13 +30,18 @@ function Counter() {
 
   useEffect(() => {
     function handleButtonContent() {
-      if (counter < 1) setButtonContent("Reset");
+      if (counter < 1) {
+        setTimerStarted(false);
+        setButtonContent("Start");
+        setCounter(30);
+        setExerciseNum(exerciseNum + 1);
+      }
     }
     handleButtonContent();
     timerStarted &&
       counter > 0 &&
       setTimeout(() => setCounter(counter - 1), 1000);
-  }, [counter, timerStarted]);
+  }, [counter, timerStarted, setExerciseNum, exerciseNum]);
 
   return (
     <div>
