@@ -1,27 +1,36 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 function Counter() {
   const [counter, setCounter] = useState(30);
   const [timerStarted, setTimerStarted] = useState(false);
-  const [buttonContent, setButtonContent] = useState('Start');
+  const [buttonContent, setButtonContent] = useState("Start");
 
-  function handleButton() {
-    if (buttonContent === 'Start') {
-      setTimerStarted(true);
-      setButtonContent('Stop');
-    } else if (buttonContent === 'Stop') {
-      setTimerStarted(false);
-      setButtonContent('Reset');
-    } else {
-      setTimerStarted(false);
-      setCounter(30);
-      setButtonContent('Start');
+  function handleButtonClick() {
+    switch (buttonContent) {
+      case "Start": {
+        setTimerStarted(true);
+        setButtonContent("Stop");
+        break;
+      }
+      case "Stop": {
+        setTimerStarted(false);
+        setButtonContent("Reset");
+        break;
+      }
+      case "Reset": {
+        setTimerStarted(false);
+        setCounter(30);
+        setButtonContent("Start");
+        break;
+      }
+      default:
+        return;
     }
   }
 
   useEffect(() => {
     function handleButtonContent() {
-      if (counter < 1) setButtonContent('Reset');
+      if (counter < 1) setButtonContent("Reset");
     }
     handleButtonContent();
     timerStarted &&
@@ -32,7 +41,7 @@ function Counter() {
   return (
     <div>
       <div>{counter}</div>
-      <button onClick={handleButton}>{buttonContent}</button>
+      <button onClick={handleButtonClick}>{buttonContent}</button>
     </div>
   );
 }
