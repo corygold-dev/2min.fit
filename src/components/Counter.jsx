@@ -13,8 +13,11 @@ function Counter({
   function handleButtonClick() {
     switch (buttonContent) {
       case "Start": {
-        setTimerStarted(true);
-        setButtonContent("Stop");
+        setButtonContent("Get Ready!");
+        setTimeout(() => {
+          setTimerStarted(true);
+          setButtonContent("Stop");
+        }, 3000);
         break;
       }
       case "Stop": {
@@ -53,7 +56,14 @@ function Counter({
     timerStarted &&
       counter > 0 &&
       setTimeout(() => setCounter(counter - 1), 1000);
-  }, [counter, timerStarted, setTimerStarted, setExerciseNum, exerciseNum, buttonContent]);
+  }, [
+    counter,
+    timerStarted,
+    setTimerStarted,
+    setExerciseNum,
+    exerciseNum,
+    buttonContent,
+  ]);
 
   return (
     <div>
