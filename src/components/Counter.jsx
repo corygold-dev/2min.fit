@@ -67,7 +67,7 @@ function Counter({
 
   return (
     <div>
-      <div>{counter}</div>
+      <div id="counter">{counter}</div>
       <button onClick={handleButtonClick}>{buttonContent}</button>
     </div>
   );

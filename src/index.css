@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#main-app {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+button {
+  background: none;
+	color: inherit;
+	border: 2px solid blue; 
+  border-radius: 8px;
+	padding: 0.5em;
+	font: inherit;
+	cursor: pointer;
+}
+
+#counter {
+  font-size: 8em;
+}
