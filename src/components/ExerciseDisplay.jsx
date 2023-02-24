@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import { CounterContext } from "../providers/CounterProvider";
+import { ExerciseContext } from "../providers/ExerciseProvider";
 import exercises from "../exercises";
 
-export const ExerciseDisplay = ({
-  exerciseNum,
-  setExerciseNum,
-  timerStarted,
-}) => {
+export function ExerciseDisplay() {
+  const { exerciseNum, setExerciseNum } = useContext(ExerciseContext);
+  const { timerStarted } = useContext(CounterContext);
+
   const exerciseBlock = exercises[new Date().getDay()];
 
   const handleNextExercise = () => {
@@ -18,7 +19,11 @@ export const ExerciseDisplay = ({
 
   return (
     <>
-      <a href={exerciseBlock[exerciseNum]["link"]} target="_blank" rel="noreferrer">
+      <a
+        href={exerciseBlock[exerciseNum]["link"]}
+        target="_blank"
+        rel="noreferrer"
+      >
         {exerciseBlock[exerciseNum]["exerciseName"]}
       </a>
       {timerStarted ? null : (
@@ -33,4 +38,4 @@ export const ExerciseDisplay = ({
       )}
     </>
   );
-};
+}

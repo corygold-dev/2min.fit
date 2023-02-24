@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import ding from "../assets/ding.mp3";
+import { CounterContext } from "../providers/CounterProvider";
+import { ExerciseContext } from "../providers/ExerciseProvider";
 
-function Counter({
-  setExerciseNum,
-  exerciseNum,
-  timerStarted,
-  setTimerStarted,
-}) {
+function Counter() {
+  const { timerStarted, setTimerStarted } = useContext(CounterContext);
+  const { setExerciseNum, exerciseNum } = useContext(ExerciseContext);
+
   const [counter, setCounter] = useState(30);
   const [buttonContent, setButtonContent] = useState("Start");
 

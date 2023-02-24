@@ -7,11 +7,11 @@ function CounterProvider({ children }) {
   const [timerStarted, setTimerStarted] = useState(false);
 
   return (
-    <CounterProvider.Provider
+    <CounterContext.Provider
       value={{ counter, setCounter, timerStarted, setTimerStarted }}
     >
       {children}
-    </CounterProvider.Provider>
+    </CounterContext.Provider>
   );
 }
 
