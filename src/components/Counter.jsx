@@ -47,7 +47,7 @@ function Counter() {
         new Audio(ding).play();
         setTimerStarted(false);
         setButtonContent("Start");
-        setExerciseNum(exerciseNum + 1);
+        setExerciseNum(exerciseNum !== 3 ? exerciseNum + 1 : 1);
         exerciseNum === 3 ? setCounter(60) : setCounter(30);
       }
     }
@@ -56,14 +56,7 @@ function Counter() {
     timerStarted &&
       counter > 0 &&
       setTimeout(() => setCounter(counter - 1), 1000);
-  }, [
-    counter,
-    timerStarted,
-    setTimerStarted,
-    setExerciseNum,
-    exerciseNum,
-    buttonContent,
-  ]);
+  });
 
   return (
     <div>
