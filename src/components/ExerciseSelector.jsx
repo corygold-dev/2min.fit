@@ -18,12 +18,20 @@ function ExerciseSelector() {
     <div id="next-prev-buttons">
       {timerStarted ? null : (
         <>
-          {exerciseNum < 3 ? (
-            <button onClick={handleNextExercise}>Next Exercise</button>
-          ) : null}
           {exerciseNum > 1 ? (
-            <button onClick={handlePrevExercise}>Previous Exercise</button>
-          ) : null}
+            <button id="previous-exercise" onClick={handlePrevExercise}>
+              Previous Exercise
+            </button>
+          ) : (
+            <div></div>
+          )}
+          {exerciseNum < 3 ? (
+            <button id="next-exercise" onClick={handleNextExercise}>
+              Next Exercise
+            </button>
+          ) : (
+            <div></div>
+          )}
         </>
       )}
     </div>
