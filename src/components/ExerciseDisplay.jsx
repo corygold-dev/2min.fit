@@ -8,7 +8,7 @@ export function ExerciseDisplay() {
   const exerciseBlock = exercises[new Date().getDay()];
 
   return (
-    <>
+    <div id="exercise-display">
       <a
         href={exerciseBlock[exerciseNum]["link"]}
         target="_blank"
@@ -16,6 +16,6 @@ export function ExerciseDisplay() {
       >
         {exerciseBlock[exerciseNum]["exerciseName"]}
       </a>
-    </>
+    </div>
   );
 }
