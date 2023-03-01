@@ -1,0 +1,14 @@
+#exercise-display {
+  font-size: 3em;
+  color: #eb5e28;
+}
+
+#exercise-display:hover {
+  color: #ccc5b9;
+  transition: 200ms;
+}
+
+#exercise-display a {
+  text-decoration: none;
+  color: inherit;
+}

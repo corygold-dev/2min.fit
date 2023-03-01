@@ -1,0 +1,12 @@
+#next-prev-buttons {
+    position: fixed;
+    min-width: 450px;
+    display: flex;
+    justify-content: space-between;
+    /* margin: 5vw; */
+  }
+  
+  #next-prev-buttons * {
+    max-width: 6em;
+    line-height: 1.5;
+  }

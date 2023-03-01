@@ -1,15 +1,15 @@
-import Counter from "./components/Counter";
-import { ExerciseDisplay } from "./components/ExerciseDisplay";
-import ExerciseSelector from "./components/ExerciseSelector";
+import Counter from "./components/Counter/Counter";
+import ExerciseDisplay from "./components/ExerciseDisplay/ExerciseDisplay";
+import ExerciseSelector from "./components/ExerciseSelector/ExerciseSelector";
+import Instructions from "./components/Instructions/Instructions";
 
-function App() {
+export default function App() {
   return (
     <div id="main-app">
+      <Instructions />
       <ExerciseDisplay />
       <Counter />
       <ExerciseSelector />
     </div>
   );
 }
-
-export default App;

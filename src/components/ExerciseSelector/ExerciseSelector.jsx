@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
-import { CounterContext } from "../providers/CounterProvider";
-import { ExerciseContext } from "../providers/ExerciseProvider";
+import "./ExerciseSelector.css";
+import { CounterContext } from "../../providers/CounterProvider";
+import { ExerciseContext } from "../../providers/ExerciseProvider";
 
-function ExerciseSelector() {
+export default function ExerciseSelector() {
   const { timerStarted } = useContext(CounterContext);
   const { exerciseNum, setExerciseNum } = useContext(ExerciseContext);
 
@@ -37,5 +38,3 @@ function ExerciseSelector() {
     </div>
   );
 }
-
-export default ExerciseSelector;

@@ -1,9 +1,10 @@
 import { useEffect, useState, useContext } from "react";
-import ding from "../assets/ding.mp3";
-import { CounterContext } from "../providers/CounterProvider";
-import { ExerciseContext } from "../providers/ExerciseProvider";
+import "./Counter.css";
+import ding from "../../assets/ding.mp3";
+import { CounterContext } from "../../providers/CounterProvider";
+import { ExerciseContext } from "../../providers/ExerciseProvider";
 
-function Counter() {
+export default function Counter() {
   const { timerStarted, setTimerStarted } = useContext(CounterContext);
   const { setExerciseNum, exerciseNum } = useContext(ExerciseContext);
 
@@ -61,9 +62,9 @@ function Counter() {
   return (
     <div>
       <div id="counter">{counter}</div>
-      <button id="timer-button" onClick={handleButtonClick}>{buttonContent}</button>
+      <button id="timer-button" onClick={handleButtonClick}>
+        {buttonContent}
+      </button>
     </div>
   );
 }
-
-export default Counter;
