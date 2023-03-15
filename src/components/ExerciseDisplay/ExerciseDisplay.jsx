@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 import "./ExerciseDisplay.css";
 import { ExerciseContext } from "../../providers/ExerciseProvider";
-import exercises from "../../exercises";
-
+import { exercises } from "../../exercises";
 export default function ExerciseDisplay() {
   const { exerciseNum } = useContext(ExerciseContext);
 

@@ -16,9 +16,10 @@ export default function Counter() {
       case "Start": {
         setButtonContent("Get Ready!");
         setTimeout(() => {
+          new Audio(ding).play();
           setTimerStarted(true);
           setButtonContent("Stop");
-        }, 3000);
+        }, 4500);
         break;
       }
       case "Stop": {
