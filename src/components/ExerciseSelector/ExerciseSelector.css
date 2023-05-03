@@ -3,10 +3,17 @@
     min-width: 450px;
     display: flex;
     justify-content: space-between;
-    /* margin: 5vw; */
   }
   
   #next-prev-buttons * {
     max-width: 6em;
     line-height: 1.5;
+  }
+
+  @media screen and (max-width: 480px) {
+    #next-prev-buttons {
+      position: relative;
+      min-width: 200px;
+      margin-top: 1em;
+    }
   }
