@@ -4,12 +4,15 @@ import "./index.css";
 import App from "./App";
 import { CounterProvider } from "./providers/CounterProvider";
 import { ExerciseProvider } from "./providers/ExerciseProvider";
+import { ProgramProvider } from "./providers/ProgramProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <ExerciseProvider>
-    <CounterProvider>
-      <App />
-    </CounterProvider>
-  </ExerciseProvider>
+  <ProgramProvider>
+    <ExerciseProvider>
+      <CounterProvider>
+        <App />
+      </CounterProvider>
+    </ExerciseProvider>
+  </ProgramProvider>
 );
