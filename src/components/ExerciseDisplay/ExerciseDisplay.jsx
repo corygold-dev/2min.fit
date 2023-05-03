@@ -6,7 +6,12 @@ export default function ExerciseDisplay() {
   const { exerciseNum } = useContext(ExerciseContext);
   const { program } = useContext(ProgramContext);
 
-  const exerciseBlock = program[new Date().getDay()];
+  const day = new Date().getDay();
+  let exerciseBlock = program[day];
+
+  if (day === 0 || day === 6) {
+    exerciseBlock = program[Math.floor(Math.random() * (5 - 1 + 1) + 1)];
+  }
 
   return (
     <div id="exercise-display">
