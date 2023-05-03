@@ -14,13 +14,13 @@ export default function Instructions() {
       </div>
       <div>
         <p>
-          The "Next Exercise" and "Previous Exercise" buttons navigate through
-          your daily three exercises.
+          The <strong>Next Exercise</strong> and <strong>Previous Exercise</strong> buttons navigate through
+          your 3 daily exercises.
         </p>
       </div>
       <div>
         <p>
-          Use the start button to start your timer - a 5 second "Get Ready"
+          The <strong>Start</strong> button starts your timer - a 5 second "Get Ready"
           countdown allows you to get into position for the exercise.
         </p>
         <button onClick={() => setInstructionsShown(false)}>Close</button>

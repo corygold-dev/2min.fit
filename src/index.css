@@ -28,6 +28,10 @@ button {
   cursor: pointer;
 }
 
+strong {
+  color: #eb5e28;
+}
+
 button:hover {
   background-color: #eb5e28;
   transition: 200ms;
