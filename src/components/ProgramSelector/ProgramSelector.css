@@ -1,8 +1,23 @@
 #program-buttons {
-    display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selected {
+  background-color: #eb5e28;
 }
 
 #program-buttons * {
-    width: 100px;
-    margin: 10px;
+  width: 120px;
+  margin: 10px;
 }
+
+@media screen and (max-width: 480px) {
+    #program-buttons {
+        flex-direction: column;
+      position: relative;
+      min-width: 200px;
+      margin-top: 1em;
+    }
+  }

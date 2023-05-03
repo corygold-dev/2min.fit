@@ -1,10 +1,10 @@
 import React, { createContext, useState } from "react";
-import { exercises } from "../exercises";
+import { intermediate } from "../exercises/intermediate";
 
 const ProgramContext = createContext();
 
 function ProgramProvider({ children }) {
-  const [program, setProgram] = useState(exercises);
+  const [program, setProgram] = useState(intermediate);
 
   return (
     <ProgramContext.Provider value={{ program, setProgram }}>
