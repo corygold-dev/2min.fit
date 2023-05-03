@@ -13,9 +13,9 @@ As a user, you are also able to select from different programs. Currently, there
 ### How do you use it?
 I recommend simply having the app open in a browser tab and going through a round after a meetings or implemented in a Pomodoro Timer regimen (performing the exercises during the 5 minute Pomodoro breaks). The app is simple to use, with a small set of instructions available upon the app opening. 
 
-## Plans for Version 1.1
-- Updates exercise program to include Beginner, Intermediate, and Expert
-- Options for users using the app on the weekend (currently it only supports M-F)
+## Version 1.1
+- Updated exercise programs to include Beginner, Intermediate, and Expert options
+- Include random exercises for those using the app on a weekend
 
 ## Contact Info
 Thank you so much for taking a look at my little app! You can find me on [LinkedIn](https://www.linkedin.com/in/corygold/) or by checking out my [Porfolio Website](https://www.corygold.dev).
