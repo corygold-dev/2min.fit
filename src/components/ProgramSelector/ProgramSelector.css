@@ -1,0 +1,8 @@
+#program-buttons {
+    display: flex;
+}
+
+#program-buttons * {
+    width: 100px;
+    margin: 10px;
+}

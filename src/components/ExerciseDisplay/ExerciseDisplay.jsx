@@ -1,11 +1,12 @@
 import React, { useContext } from "react";
 import "./ExerciseDisplay.css";
 import { ExerciseContext } from "../../providers/ExerciseProvider";
-import { exercises } from "../../exercises";
+import { ProgramContext } from "../../providers/ProgramProvider";
 export default function ExerciseDisplay() {
   const { exerciseNum } = useContext(ExerciseContext);
+  const { program } = useContext(ProgramContext);
 
-  const exerciseBlock = exercises[new Date().getDay()];
+  const exerciseBlock = program[new Date().getDay()];
 
   return (
     <div id="exercise-display">
