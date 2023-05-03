@@ -8,7 +8,7 @@ export default function ProgramSelector() {
 
   return (
     <div id="program-buttons">
-      <button onClick={() => setProgram(exercises)}>Regular</button>
+      <button onClick={() => setProgram(exercises)}>Original</button>
       <button onClick={() => setProgram(atgExercises)}>ATG</button>
     </div>
   );
