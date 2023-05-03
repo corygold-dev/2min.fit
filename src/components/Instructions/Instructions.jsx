@@ -8,15 +8,20 @@ export default function Instructions() {
     <div id={instructionsShown ? "instructions" : "hiddenInstructions"}>
       <div>
         <p>
-          Click the exercise name for a how-to video. The "Next Exercise" and
-          "Previous Exercise" buttons navigate through your daily three
-          exercises (two strength exercises and one stretching).
+          Clicking the exercise name opens a separate tab with an instructional
+          video on how to perform the exercise.
         </p>
       </div>
       <div>
         <p>
-          Use the start button to start your timer - a three second "Get Ready"
-          countdown allows you to get into position for your exercise!
+          The "Next Exercise" and "Previous Exercise" buttons navigate through
+          your daily three exercises.
+        </p>
+      </div>
+      <div>
+        <p>
+          Use the start button to start your timer - a 5 second "Get Ready"
+          countdown allows you to get into position for the exercise.
         </p>
         <button onClick={() => setInstructionsShown(false)}>Close</button>
       </div>
