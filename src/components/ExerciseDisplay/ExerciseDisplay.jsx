@@ -18,8 +18,9 @@ export default function ExerciseDisplay() {
 
   return (
     <div id="exercise-display">
+      <div>Exercise {exerciseNum} of 3</div>
       <a href={exerciseLink} target="_blank" rel="noreferrer">
-        {exerciseName} ({exerciseNum}) 
+        {exerciseName}
       </a>
     </div>
   );

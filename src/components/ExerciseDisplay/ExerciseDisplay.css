@@ -1,9 +1,13 @@
 #exercise-display {
-  font-size: 3em;
+  font-size: 2rem;
   color: #eb5e28;
 }
 
-#exercise-display:hover {
+#exercise-display a {
+  font-size: 3rem;
+}
+
+#exercise-display a:hover {
   color: #ccc5b9;
   transition: 200ms;
 }
