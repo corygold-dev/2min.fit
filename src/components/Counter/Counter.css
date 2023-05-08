@@ -1,9 +1,26 @@
+#video-start-buttons {
+  display: flex;
+}
+
+#video-start-buttons * {
+  font-size: 2em;
+  height: 80px;
+  margin: 0 5px;
+}
+
 #counter {
   font-size: 8em;
   margin-bottom: 1rem;
 }
 
 #timer-button {
-  font-size: 2em;
-  width: 200px;
+  width: 150px;
+}
+
+#video-button {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
 }

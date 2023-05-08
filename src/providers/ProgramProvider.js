@@ -13,7 +13,9 @@ function ProgramProvider({ children }) {
   }
 
   return (
-    <ProgramContext.Provider value={{ program, setProgram, exerciseBlock }}>
+    <ProgramContext.Provider
+      value={{ program, setProgram, exerciseBlock }}
+    >
       {children}
     </ProgramContext.Provider>
   );

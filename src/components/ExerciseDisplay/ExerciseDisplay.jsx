@@ -7,14 +7,13 @@ export default function ExerciseDisplay() {
   const { exerciseBlock } = useContext(ProgramContext);
 
   const exerciseName = exerciseBlock[exerciseNum]["exerciseName"];
-  const exerciseLink = exerciseBlock[exerciseNum]["link"];
 
   return (
     <div id="exercise-display">
       <div>Exercise {exerciseNum} of 3</div>
-      <a href={exerciseLink} target="_blank" rel="noreferrer">
+      <div id="exercise-name">
         {exerciseName}
-      </a>
+      </div>
     </div>
   );
 }

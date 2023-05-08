@@ -3,10 +3,15 @@ import "./Counter.css";
 import ding from "../../assets/ding.mp3";
 import { CounterContext } from "../../providers/CounterProvider";
 import { ExerciseContext } from "../../providers/ExerciseProvider";
+import { FaYoutube } from "react-icons/fa";
+import { ProgramContext } from "../../providers/ProgramProvider";
 
 export default function Counter() {
   const { timerStarted, setTimerStarted } = useContext(CounterContext);
   const { setExerciseNum, exerciseNum } = useContext(ExerciseContext);
+  const { exerciseBlock } = useContext(ProgramContext);
+
+  const exerciseLink = exerciseBlock[exerciseNum]["link"];
 
   const [counter, setCounter] = useState(30);
   const [buttonContent, setButtonContent] = useState("Start");
@@ -63,9 +68,16 @@ export default function Counter() {
   return (
     <div>
       <div id="counter">{counter}</div>
-      <button id="timer-button" onClick={handleButtonClick}>
-        {buttonContent}
-      </button>
+      <div id="video-start-buttons">
+        <a href={exerciseLink} target="_blank" rel="noreferrer">
+          <button id="video-button">
+            <FaYoutube />
+          </button>
+        </a>
+        <button id="timer-button" onClick={handleButtonClick}>
+          {buttonContent}
+        </button>
+      </div>
     </div>
   );
 }
