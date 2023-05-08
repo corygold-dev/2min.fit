@@ -5,9 +5,15 @@ const ProgramContext = createContext();
 
 function ProgramProvider({ children }) {
   const [program, setProgram] = useState(intermediate);
+  const day = new Date().getDay();
+  let exerciseBlock = program[day];
+
+  if (day === 0 || day === 6) {
+    exerciseBlock = program[Math.floor(Math.random() * (5 - 1 + 1) + 1)];
+  }
 
   return (
-    <ProgramContext.Provider value={{ program, setProgram }}>
+    <ProgramContext.Provider value={{ program, setProgram, exerciseBlock }}>
       {children}
     </ProgramContext.Provider>
   );

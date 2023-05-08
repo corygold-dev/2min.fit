@@ -4,14 +4,7 @@ import { ExerciseContext } from "../../providers/ExerciseProvider";
 import { ProgramContext } from "../../providers/ProgramProvider";
 export default function ExerciseDisplay() {
   const { exerciseNum } = useContext(ExerciseContext);
-  const { program } = useContext(ProgramContext);
-
-  const day = new Date().getDay();
-  let exerciseBlock = program[day];
-
-  if (day === 0 || day === 6) {
-    exerciseBlock = program[Math.floor(Math.random() * (5 - 1 + 1) + 1)];
-  }
+  const { exerciseBlock } = useContext(ProgramContext);
 
   const exerciseName = exerciseBlock[exerciseNum]["exerciseName"];
   const exerciseLink = exerciseBlock[exerciseNum]["link"];
