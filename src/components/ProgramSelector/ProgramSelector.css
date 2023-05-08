@@ -12,32 +12,33 @@
   background-color: transparent !important;
 }
 
-#beginner {
+#beginner-button {
   border-color: #799431;
   background-color: #799431;
 }
 
-#intermediate {
+#intermediate-button {
   border-color: #f3c053;
   background-color: #f3c053;
 }
 
-#expert {
-  background-color: #eb5e28;
+#expert-button {
+  border-color: #c32f27;
+  background-color: #c32f27;
 }
 
-#beginner:hover {
+#beginner-button:hover {
   background-color: #799431 !important;
   transition: 200ms;
 }
 
-#intermediate:hover {
+#intermediate-button:hover {
   background-color: #f3c053 !important;
   transition: 200ms;
 }
 
-#expert:hover {
-  background-color: #eb5e28 !important;
+#expert-button:hover {
+  background-color: #c32f27 !important;
   transition: 200ms;
 }
 

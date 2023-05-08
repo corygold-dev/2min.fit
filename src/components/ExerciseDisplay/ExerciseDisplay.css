@@ -3,7 +3,17 @@
   color: #eb5e28;
 }
 
-#exercise-name {
+#beginner {
   font-size: 3rem;
+  color: #799431;
 }
 
+#intermediate {
+  font-size: 3rem;
+  color: #f3c053;
+}
+
+#expert {
+  font-size: 3rem;
+  color: #c32f27;
+}
