@@ -8,16 +8,49 @@
   background-color: #eb5e28;
 }
 
+.not-selected {
+  background-color: transparent !important;
+}
+
+#beginner {
+  border-color: #799431;
+  background-color: #799431;
+}
+
+#intermediate {
+  border-color: #f3c053;
+  background-color: #f3c053;
+}
+
+#expert {
+  background-color: #eb5e28;
+}
+
+#beginner:hover {
+  background-color: #799431 !important;
+  transition: 200ms;
+}
+
+#intermediate:hover {
+  background-color: #f3c053 !important;
+  transition: 200ms;
+}
+
+#expert:hover {
+  background-color: #eb5e28 !important;
+  transition: 200ms;
+}
+
 #program-buttons * {
   width: 120px;
   margin: 10px;
 }
 
 @media screen and (max-width: 480px) {
-    #program-buttons {
-        flex-direction: column;
-      position: relative;
-      min-width: 200px;
-      margin-top: 1em;
-    }
+  #program-buttons {
+    flex-direction: column;
+    position: relative;
+    min-width: 200px;
+    margin-top: 1em;
   }
+}

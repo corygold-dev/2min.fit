@@ -12,19 +12,22 @@ export default function ProgramSelector() {
   return (
     <div id="program-buttons">
       <button
-        className={program === beginner ? "selected" : null}
+        id="beginner"
+        className={program === beginner ? "selected" : "not-selected"}
         onClick={() => setProgram(beginner)}
       >
         Beginner
       </button>
       <button
-        className={program === intermediate ? "selected" : null}
+        id="intermediate"
+        className={program === intermediate ? "selected" : "not-selected"}
         onClick={() => setProgram(intermediate)}
       >
         Intermediate
       </button>
       <button
-        className={program === expert ? "selected" : null}
+        id="expert"
+        className={program === expert ? "selected" : "not-selected"}
         onClick={() => setProgram(expert)}
       >
         Expert
