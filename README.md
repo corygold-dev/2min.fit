@@ -13,11 +13,18 @@ As a user, you are also able to select from different programs - beginner, inter
 ### How do you use it?
 I recommend simply having the app open in a browser tab and going through a round after a meetings or implemented in a Pomodoro Timer regimen (performing the exercises during the 5 minute Pomodoro breaks). The app is simple to use, with a small set of instructions available upon the app opening. 
 
+## Version 1.2
+- Changed color scheme and branding
+- Moved exercise link to a dedicated button
+- General bug fixes
+
+![version 1.2 2 minutefit](public/2minfit1-2.png)
+
 ## Version 1.1
 - Updated exercise programs to include Beginner, Intermediate, and Expert options
 - Include random exercises for those using the app on a weekend
 
-![version 1.1 2 minutefit](https://www.corygold.dev/images/2minfit.png)
+![version 1.1 2 minutefit](public/2minfit1-1.png)
 
 ## Contact Info
 Thank you so much for taking a look at my little app! You can find me on [LinkedIn](https://www.linkedin.com/in/corygold/) or by checking out my [Porfolio Website](https://www.corygold.dev).
