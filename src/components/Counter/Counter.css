@@ -14,7 +14,8 @@
 }
 
 #timer-button {
-  width: 150px;
+  width: 175px;
+  padding: 0px;
 }
 
 #video-button {
