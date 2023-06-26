@@ -43,6 +43,10 @@
 }
 
 #random-button:hover {
+  background-color: transparent;
+}
+
+#random-button.not-selected:hover {
   background-color: #33a1fd !important;
 }
 

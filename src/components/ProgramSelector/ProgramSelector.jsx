@@ -17,7 +17,7 @@ export default function ProgramSelector() {
           className={random ? "selected" : "not-selected"}
           onClick={() => setRandom(!random)}
         >
-          Random
+          {random ? "Turn Random Off" : "Turn Random On"}
         </button>
       </div>
       <div id="program-buttons">
