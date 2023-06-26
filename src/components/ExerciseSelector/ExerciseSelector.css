@@ -1,5 +1,6 @@
 #next-prev-buttons {
-    position: fixed;
+  margin-top: 110px;  
+  position: fixed;
     min-width: 450px;
     display: flex;
     justify-content: space-between;

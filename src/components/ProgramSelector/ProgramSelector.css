@@ -4,12 +4,12 @@
   justify-content: center;
 }
 
-.selected {
-  background-color: #eb5e28;
-}
-
 .not-selected {
   background-color: transparent !important;
+}
+
+#random-button {
+  background-color: #33a1fd;
 }
 
 #beginner-button {
@@ -40,6 +40,10 @@
 #expert-button:hover {
   background-color: #c32f27 !important;
   transition: 200ms;
+}
+
+#random-button:hover {
+  background-color: #33a1fd !important;
 }
 
 #program-buttons * {
