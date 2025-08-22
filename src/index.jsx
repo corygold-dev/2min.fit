@@ -14,5 +14,5 @@ root.render(
         <App />
       </CounterProvider>
     </ExerciseProvider>
-  </ProgramProvider>
+  </ProgramProvider>,
 );

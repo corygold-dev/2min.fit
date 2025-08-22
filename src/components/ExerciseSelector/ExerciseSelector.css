@@ -1,21 +1,21 @@
 #next-prev-buttons {
-  margin-top: 110px;  
+  margin-top: 110px;
   position: fixed;
-    min-width: 450px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  #next-prev-buttons * {
-    max-width: 6em;
-    line-height: 1.5;
-  }
+  min-width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
 
-  @media screen and (max-width: 480px) {
-    #next-prev-buttons {
-      position: relative;
-      min-width: 200px;
-      margin-top: 1em;
-      margin-bottom: 100px;
-    }
+#next-prev-buttons * {
+  max-width: 6em;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 480px) {
+  #next-prev-buttons {
+    position: relative;
+    min-width: 200px;
+    margin-top: 1em;
+    margin-bottom: 100px;
   }
+}
